@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ログイン | 学習記録アプリ</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-card">
+    <h1>学習記録アプリ</h1>
+    <p>ログインして学習を記録しましょう。</p>
+    <p id="message" class="message" aria-live="polite"></p>
+    <form id="login-form">
+      <label>
+        メールアドレス
+        <input id="email" type="email" required autocomplete="email">
+      </label>
+      <label>
+        パスワード
+        <input id="password" type="password" required autocomplete="current-password">
+      </label>
+      <button type="submit">ログイン</button>
+    </form>
+    <p>アカウントをお持ちでない場合は <a href="/register">新規登録</a></p>
+  </main>
+  <script type="module" src="/static/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>カテゴリフォーム | 学習記録アプリ</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/records">学習記録アプリ</a>
+    <nav>
+      <a href="/records">記録</a>
+      <a href="/categories">カテゴリ</a>
+      <a href="/settings">設定</a>
+      <button class="link-button" data-logout>ログアウト</button>
+    </nav>
+  </header>
+  <main class="container narrow">
+    <p><a href="/categories">← 一覧へ戻る</a></p>
+    <h1 id="form-title">カテゴリを追加</h1>
+    <p id="message" class="message" aria-live="polite"></p>
+    <form id="category-form">
+      <label>
+        カテゴリ名
+        <input id="name" type="text" required maxlength="100">
+      </label>
+      <label>
+        詳細
+        <textarea id="detail" maxlength="500"></textarea>
+      </label>
+      <button type="submit">保存する</button>
+    </form>
+  </main>
+  <script type="module" src="/static/js/categories.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>記録詳細 | 学習記録アプリ</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/records">学習記録アプリ</a>
+    <nav>
+      <a href="/records">記録</a>
+      <a href="/categories">カテゴリ</a>
+      <a href="/settings">設定</a>
+      <button class="link-button" data-logout>ログアウト</button>
+    </nav>
+  </header>
+  <main class="container narrow">
+    <p><a href="/records">← 一覧へ戻る</a></p>
+    <p id="message" class="message" aria-live="polite"></p>
+    <article id="record-detail">
+      <p>読み込み中...</p>
+    </article>
+  </main>
+  <script type="module" src="/static/js/records.js"></script>
+</body>
+</html>
