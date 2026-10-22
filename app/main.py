@@ -6,6 +6,7 @@ from fastapi.responses import HTMLResponse
 from app.api import users
 from app.api import records
 from app.api import categories
+
 import app.models
 from app.database import Base, engine
 
